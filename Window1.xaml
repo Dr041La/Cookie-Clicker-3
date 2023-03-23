@@ -1,0 +1,34 @@
+﻿<Window x:Class="Cookie_Clicker_3.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cookie_Clicker_3"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="694">
+
+    <Grid Margin="1,0,-1,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Screenshot 2023-03-23 143158.png" Stretch="Fill"/>
+        </Grid.Background>
+        <Label Background="#4C000000"/>
+        <Image HorizontalAlignment="Left" Height="82" Margin="332,112,0,0" VerticalAlignment="Top" Width="90" Source="/babka.png"/>
+        <Image HorizontalAlignment="Left" Height="60" Margin="332,40,0,0" VerticalAlignment="Top" Width="57" Source="/7d4f18b9fe32fdfd178d3b0b60ef6534.png"/>
+        <Image HorizontalAlignment="Left" Height="69" Margin="326,210,0,0" VerticalAlignment="Top" Width="100" Source="/Fake mastur beast.png"/>
+        <Image HorizontalAlignment="Left" Height="72" Margin="336,295,0,0" VerticalAlignment="Top" Width="80" Source="/7aaba2412c90fbb2cbd6699b878b34c4.jpg"/>
+        <Label Content="Курсос" HorizontalAlignment="Left" Margin="487,56,0,0" VerticalAlignment="Top" Background="Gainsboro" Foreground="Black"/>
+        <Label Content="Бабка гренки" HorizontalAlignment="Left" Margin="487,140,0,0" VerticalAlignment="Top" Background="#FFDAD9D9"/>
+        <Label Content="Фейк Бист" HorizontalAlignment="Left" Margin="487,228,0,0" VerticalAlignment="Top" Background="#FFD4D4D4"/>
+        <Label Content="Мр.Бист" HorizontalAlignment="Left" Margin="487,318,0,0" VerticalAlignment="Top" Background="#FFDEDDDD"/>
+        <Label x:Name="lb1" Content="+1 сила клика" HorizontalAlignment="Left" Margin="48,56,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="lb2" Content="+1 печенька/сек" HorizontalAlignment="Left" Margin="48,135,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="lb3" Content="+10 печенька/сек" HorizontalAlignment="Left" Margin="38,228,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="lb4" Content="+100 печенька/сек" HorizontalAlignment="Left" Margin="38,331,0,0" VerticalAlignment="Top" Width="119" Height="49" Foreground="White"/>
+        <Button x:Name="b1" Content="10 Печенек" HorizontalAlignment="Left" Margin="187,40,0,0" VerticalAlignment="Top" Height="42" Width="105" Click="Button_Click_1" Background="#FFC1FFCD"/>
+        <Button x:Name="b2" Content="100 Печенек" HorizontalAlignment="Left" Margin="187,131,0,0" VerticalAlignment="Top" Height="44" Width="105" Click="Button_Click_2" Background="#FFEAFF92"/>
+        <Button x:Name="b3" Content="1000 Печенек" HorizontalAlignment="Left" Margin="187,219,0,0" VerticalAlignment="Top" Height="44" Width="105" Click="b3_Click" Background="#FFBAE1FF"/>
+        <Button x:Name="b4" Content="100000 Печенек" HorizontalAlignment="Left" Margin="187,318,0,0" VerticalAlignment="Top" Height="49" Width="105" Click="b4_Click" Background="#FFFAAAFF"/>
+        <Button x:Name="b5" Content="Закрыть" HorizontalAlignment="Left" Margin="590,26,0,0" VerticalAlignment="Top" Height="50" Width="53" Click="b5_Click" Background="Red"/>
+    </Grid>
+
+</Window>
