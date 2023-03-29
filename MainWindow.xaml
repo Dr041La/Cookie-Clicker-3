@@ -6,26 +6,32 @@
         xmlns:local="clr-namespace:Cookie_Clicker_3"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FFD4FAFF"/>
-                <GradientStop Color="#FFFBD0D0" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-        <Button x:Name="MainButton" Content="" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" Height="250" Width="250" BorderBrush="{x:Null}" Click="MainButton_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="/dark-fresh-chocolate-cookie-pictures-12.png"/>
-            </Button.Background>
-        </Button>
+    <Grid x:Name="Grinder" Background="#FFC8C8C8">
+        <Button x:Name="MainButton" Content="" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" Height="250" Width="250" BorderBrush="{x:Null}" Click="MainButton_Click" OpacityMask="#FFFF8585" Background="White" Panel.ZIndex="2"/>
         <Label x:Name="label1" Content="0" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" FontFamily="Brush Script MT" FontSize="48"/>
-        <Button Content="Магазин" HorizontalAlignment="Left" Margin="594,186,0,0" VerticalAlignment="Top" Height="53" Width="145" Click="Button_Click">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFF9D6FF"/>
-                    <GradientStop Color="#FFC6CFFF" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
+        <Button Content="Магазин" HorizontalAlignment="Left" Margin="620,326,0,0" VerticalAlignment="Top" Height="53" Width="144" Click="Button_Click" Background="White" BorderBrush="{x:Null}"/>
+        <StackPanel Margin="637,163,10,201">
+            <RadioButton Content="Оранжевый" Checked="RadioButton_Checked"/>
+            <RadioButton Content="Зелёный" Checked="RadioButton_Checked_1"/>
+            <RadioButton Content="Розовый" Checked="RadioButton_Checked_2"/>
+
+        </StackPanel>
+        <StackPanel Margin="599,68,21,317">
+            <ComboBox x:Name="cbox" Width="72" SelectionChanged="ComboBox_SelectionChanged" Height="20" BorderBrush="{x:Null}">
+                <ComboBoxItem Background="#FF9CFF79" Content="Green" Height="20" Width="60"/>
+                <ComboBoxItem Background="#FF89C1FF" Content="Blue" Height="20" Width="60"/>
+                <ComboBoxItem Background="#FFFF8383" Content="Red" Height="20" Width="60"/>
+            </ComboBox>
+
+        </StackPanel>
+        <Menu Height="23" VerticalAlignment="Top" Margin="0,0,685,0" Background="#FFF9D7FF">
+            <MenuItem Header="Menu" Height="24" Width="115" Background="White" Foreground="Black" BorderBrush="{x:Null}">
+                <MenuItem Header="Shop" Click="MenuItem_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Label Content="Цвет кнопки" HorizontalAlignment="Left" Margin="649,37,0,0" VerticalAlignment="Top"/>
+        <Label Content="Цвет фона" HorizontalAlignment="Left" Margin="655,137,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb1" HorizontalAlignment="Left" Margin="45,344,0,0" TextWrapping="Wrap" Text="Печенек" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Название валюты" HorizontalAlignment="Left" Margin="45,313,0,0" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>

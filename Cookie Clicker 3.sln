@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cookie Clicker 3", "Cookie Clicker 3.csproj", "{FFE3399C-0C2B-4227-B7FF-3FC1F745B066}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cookie Clicker 4", "Cookie Clicker 4.csproj", "{FFE3399C-0C2B-4227-B7FF-3FC1F745B066}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
